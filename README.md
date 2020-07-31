@@ -20,7 +20,7 @@ Use this approach if you have access to our private repositories!
 
 ```bash
 composer config repositories.swissup composer https://docs.swissuplabs.com/packages/
-composer require swissup/module-search-mysql-like:dev-master --prefer-source
+composer require swissup/module-search-mysql-like:dev-master --prefer-source --ignore-platform-reqs
 bin/magento module:enable Swissup_SearchMysqlLike
 bin/magento setup:upgrade
 ```
