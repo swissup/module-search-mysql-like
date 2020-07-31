@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-
+    <!--
     <virtualType name="Swissup\SearchMysqlLike\Model\Adapter\Mysql\ScoreBuilder" type="Magento\Framework\Search\Adapter\Mysql\ScoreBuilder" />
     <type name="Magento\Framework\Search\Adapter\Mysql\ScoreBuilder">
         <plugin name="pluginBeforeAddCondition" type="Swissup\SearchMysqlLike\Plugin\Model\Adapter\Mysql\ScoreBuilderPlugin" sortOrder="10" disabled="false" />
     </type>
+    -->
     <virtualType name="Swissup\SearchMysqlLike\Model\Adapter\Mysql\ScoreBuilderFactory" type="Magento\Framework\Search\Adapter\Mysql\ScoreBuilderFactory">
         <arguments>
             <argument name="instanceName" xsi:type="string">Swissup\SearchMysqlLike\Model\Adapter\Mysql\ScoreBuilder</argument>
