@@ -11,7 +11,9 @@
     "version": "0.1.0",
     "license": "OSL-3.0",
     "require": {
-        "swissup/module-core": "^1.10.3"
+        "swissup/module-core": "^1.10.3",
+        "magento/framework": "^101.0|^102.0",
+        "magento/module-search": "^100.2|^101.0"
     },
     "autoload": {
         "files": [ "registration.php" ],
