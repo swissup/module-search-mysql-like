@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="ajaxsearch" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Ajaxsearch</label>
+            <tab>swissup</tab>
+            <resource>Swissup_Ajaxsearch::config</resource>
+            <group id="mysql" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>MySQL Search Engine</label>
+                <field id="search_method" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Search method</label>
+                    <source_model>Swissup\SearchMysqlLike\Model\Config\Source\MysqlMethod</source_model>
+                    <comment><![CDATA[<b>FULLTEXT</b> - default Magento method for Catalog Search.<br /><b>LIKE</b> - slightly old-school but still decent method for Catalog Search. Pros - search for strings with dash (-) and one-two-character substrings. Can show more relevant results for some catalogs. Cons - stricter (less results), slower on really big catalogs.]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
