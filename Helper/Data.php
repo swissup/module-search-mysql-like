@@ -5,7 +5,6 @@ namespace Swissup\SearchMysqlLike\Helper;
 use Magento\Store\Model\ScopeInterface;
 use Magento\Search\Model\QueryFactory;
 use Swissup\SearchMysqlLike\Model\Config\Source\MysqlMethod;
-use Swissup\Ajaxsearch\Model\Config\Source\Design\FormLayout;
 
 class Data extends \Magento\Search\Helper\Data
 {
