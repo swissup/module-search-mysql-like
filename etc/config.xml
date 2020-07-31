@@ -1,0 +1,10 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <ajaxsearch>            
+            <mysql>
+                <search_method>fulltext</search_method>
+                <like_words_limit>5</like_words_limit>
+            </mysql>
+        </ajaxsearch>
+    </default>
+</config>
